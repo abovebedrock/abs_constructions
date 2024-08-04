@@ -34,7 +34,7 @@
             "tag:wood": {},
             "minecraft:map_color": "#4C7F99",
             "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 2.0
+                "seconds_to_destroy": 0.75
             },
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 3.0

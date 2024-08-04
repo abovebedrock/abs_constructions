@@ -35,7 +35,7 @@
             "tag:copper": {},
             "minecraft:map_color": "#876B62",
             "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 3.0
+                "seconds_to_destroy": 0.75
             },
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 6.0
