@@ -1,0 +1,1 @@
+https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/textures/blocks/quartz_block_bottom.png
