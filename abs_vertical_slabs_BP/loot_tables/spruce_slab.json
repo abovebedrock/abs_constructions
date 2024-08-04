@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:spruce_slab"
+                    "name": "abs:spruce_slab",
+                    "count": 1
                 }
             ]
         }

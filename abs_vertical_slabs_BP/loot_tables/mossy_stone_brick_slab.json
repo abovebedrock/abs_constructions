@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:mossy_stone_brick_slab"
+                    "name": "abs:mossy_stone_brick_slab",
+                    "count": 1
                 }
             ]
         }

@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:oxidized_cut_copper_slab"
+                    "name": "abs:oxidized_cut_copper_slab",
+                    "count": 1
                 }
             ]
         }

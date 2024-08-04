@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:diorite_slab"
+                    "name": "abs:diorite_slab",
+                    "count": 1
                 }
             ]
         }

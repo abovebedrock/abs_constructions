@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:cobbled_deepslate_slab"
+                    "name": "abs:cobbled_deepslate_slab",
+                    "count": 1
                 }
             ]
         }

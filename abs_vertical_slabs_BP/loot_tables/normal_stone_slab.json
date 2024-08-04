@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:normal_stone_slab"
+                    "name": "abs:normal_stone_slab",
+                    "count": 1
                 }
             ]
         }

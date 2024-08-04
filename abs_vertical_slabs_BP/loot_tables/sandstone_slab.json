@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:sandstone_slab"
+                    "name": "abs:sandstone_slab",
+                    "count": 1
                 }
             ]
         }

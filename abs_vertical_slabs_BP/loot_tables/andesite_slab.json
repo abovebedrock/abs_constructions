@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:andesite_slab"
+                    "name": "abs:andesite_slab",
+                    "count": 1
                 }
             ]
         }

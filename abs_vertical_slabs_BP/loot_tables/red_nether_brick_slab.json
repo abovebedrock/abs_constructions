@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:red_nether_brick_slab"
+                    "name": "abs:red_nether_brick_slab",
+                    "count": 1
                 }
             ]
         }

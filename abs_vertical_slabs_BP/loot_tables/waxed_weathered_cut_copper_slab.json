@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:waxed_weathered_cut_copper_slab"
+                    "name": "abs:waxed_weathered_cut_copper_slab",
+                    "count": 1
                 }
             ]
         }

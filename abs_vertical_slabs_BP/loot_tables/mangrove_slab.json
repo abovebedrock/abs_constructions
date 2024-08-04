@@ -5,7 +5,8 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "abs:mangrove_slab"
+                    "name": "abs:mangrove_slab",
+                    "count": 1
                 }
             ]
         }
