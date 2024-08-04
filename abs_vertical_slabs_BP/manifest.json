@@ -1,0 +1,37 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [ "LJM12914" ]
+    },
+    "header": {
+        "name": "半砖加强",
+        "description": "基岩之上服务器模组。提供生存友好的竖向半砖和混合半砖。",
+        "min_engine_version": [ 1, 21, 1 ],
+        "uuid": "3ad6fb9e-6aba-4508-b8af-1f6185767adf",
+        "version": [ 1, 0, 0 ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "22ab4af7-b832-4262-a582-3df57f48adb1",
+            "version": [ 1, 0, 0 ]
+        },
+        {
+            "type": "script",
+            "uuid": "77181b85-7b1b-4f17-b63d-0a7262b5db83",
+            "version": [ 1, 0, 0 ],
+            "language": "javascript",
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "c900f26b-ccdd-4817-8d52-aae289ae3fc7",
+            "version": [ 1, 0, 0 ]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.12.0-beta"
+        }
+    ]
+}

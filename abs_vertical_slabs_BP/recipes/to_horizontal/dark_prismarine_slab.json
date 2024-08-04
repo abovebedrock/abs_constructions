@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_dark_prismarine_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:dark_prismarine_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:dark_prismarine_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:stone_block_slab2",
+            "data": 3,
+            "count": 1
+        }
+    }
+}

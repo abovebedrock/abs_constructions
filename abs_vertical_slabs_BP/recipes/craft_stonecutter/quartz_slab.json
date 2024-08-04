@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_quartz_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:quartz_block",
+                "data": 0
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:quartz_block",
+                "data": 0
+            }
+        ],
+        "result": {
+            "item": "abs:quartz_slab",
+            "count": 2
+        }
+    }
+}

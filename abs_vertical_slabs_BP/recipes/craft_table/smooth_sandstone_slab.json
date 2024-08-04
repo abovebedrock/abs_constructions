@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:craft_smooth_sandstone_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:sandstone",
+                "data": 3
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:sandstone",
+                "data": 3
+            }
+        ],
+        "result": {
+            "item": "abs:smooth_sandstone_slab",
+            "count": 6
+        }
+    }
+}

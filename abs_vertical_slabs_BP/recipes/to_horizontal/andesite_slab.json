@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_andesite_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:andesite_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:andesite_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:stone_block_slab3",
+            "data": 3,
+            "count": 1
+        }
+    }
+}

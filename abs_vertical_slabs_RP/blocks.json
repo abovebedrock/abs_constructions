@@ -1,0 +1,34 @@
+{
+    "abs:oak_slab":{"sound": "wood"},
+    "abs:acacia_slab":{"sound": "wood"},
+    "abs:spruce_slab":{"sound": "wood"},
+    "abs:birch_slab":{"sound": "wood"},
+    "abs:dark_oak_slab":{"sound": "wood"},
+    "abs:jungle_slab":{"sound": "wood"},
+    "abs:mangrove_slab":{"sound": "wood"},
+    "abs:cherry_slab":{"sound": "cherry_wood"},
+    "abs:bamboo_mosaic_slab":{"sound": "bamboo_wood"},
+    "abs:bamboo_slab":{"sound": "bamboo_wood"},
+    "abs:crimson_slab":{"sound": "nether_wood"},
+    "abs:warped_slab":{"sound": "nether_wood"},
+    //deepslate
+    "abs:cobbled_deepslate_slab": {"sound": "deepslate"},
+    "abs:polished_deepslate_slab": {"sound": "deepslate"},
+    "abs:deepslate_brick_slab": {"sound": "deepslate_bricks"},
+    "abs:deepslate_tile_slab": {"sound": "deepslate_bricks"},
+    //misc
+    "abs:mud_brick_slab": {"sound": "mud_bricks"},
+    //tuff
+    "abs:tuff_slab": {"sound": "tuff"},
+    "abs:tuff_brick_slab": {"sound": "tuff_bricks"},
+    "abs:polished_tuff_slab": {"sound": "polished_tuff"},
+    //copper
+    "abs:cut_copper_slab": {"sound": "copper"},
+    "abs:exposed_cut_copper_slab": {"sound": "copper"},
+    "abs:weathered_cut_copper_slab": {"sound": "copper"},
+    "abs:oxidized_cut_copper_slab": {"sound": "copper"},
+    "abs:waxed_cut_copper_slab": {"sound": "copper"},
+    "abs:waxed_exposed_cut_copper_slab": {"sound": "copper"},
+    "abs:waxed_weathered_cut_copper_slab": {"sound": "copper"},
+    "abs:waxed_oxidized_cut_copper_slab": {"sound": "copper"}
+}

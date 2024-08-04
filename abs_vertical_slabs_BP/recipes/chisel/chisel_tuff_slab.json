@@ -1,0 +1,28 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:chisel_tuff_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:tuff_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:tuff_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:chiseled_tuff",
+            "count": 1
+        }
+    }
+}

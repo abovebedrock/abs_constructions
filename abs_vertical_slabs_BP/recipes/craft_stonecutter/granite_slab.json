@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_granite_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:granite"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:granite"
+            }
+        ],
+        "result": {
+            "item": "abs:granite_slab",
+            "count": 2
+        }
+    }
+}
