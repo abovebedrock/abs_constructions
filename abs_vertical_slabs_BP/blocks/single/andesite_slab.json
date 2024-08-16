@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.70",
+    "format_version": "1.21.20",
     "minecraft:block": {
         "description": {
             "identifier": "abs:andesite_slab",
@@ -30,6 +30,7 @@
                 "origin": [ -8.0, 0.0, -8.0 ],
                 "size": [ 16.0, 16.0, 8.0 ]
             },
+            "minecraft:custom_components": ["abs:wooden_tier"],
             "minecraft:geometry": "geometry.north",
             "tag:stone": {},
             "minecraft:map_color": "#707070",
@@ -40,18 +41,7 @@
                 "explosion_resistance": 6.0
             },
             "minecraft:light_dampening": 1,
-            "minecraft:loot": "loot_tables/empty.json",
-            "minecraft:on_player_destroyed": {
-                "condition": "query.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_pickaxe')",
-                "event": "drop"
-            }
-        },
-        "events": {
-            "drop": {
-                "spawn_loot": {
-                    "table": "loot_tables/blocks/andesite_slab.json"
-                }
-            }
+            "minecraft:loot": "loot_tables/andesite_slab.json"
         },
         "permutations": [
             {

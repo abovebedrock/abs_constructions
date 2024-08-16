@@ -1,19 +1,19 @@
 ﻿//@ts-check
-import { world, EntitySpawnAfterEvent, Entity, Block, system, Player } from "@minecraft/server";
-import { setStage, hasOxidation, getStage, isInCopperCategory, canOxidize } from "./copperUtils";
-import { decide, randomInt } from "../utils/random";
+import { world, EntitySpawnAfterEvent, Entity, Block } from "@minecraft/server";
+import { setStage, hasOxidation, getStage } from "./copperUtils";
+import { randomInt } from "../utils/random";
 import { isModItem } from "../utils/namespace";
+
 /**@param {EntitySpawnAfterEvent} data*/
 export default function lightningDeoxidize(data){
     const bolt = data.entity;
-    if(bolt.typeId == "minecraft:lightning_bolt"){
+    if(bolt.typeId === "minecraft:lightning_bolt"){
         const info = deoxidationInfo(bolt);
         if(info.meetsCondition){
-            //world.sendMessage(`${info.type}, ${info.block.location.x} ${info.block.location.y} ${info.block.location.z}`);
-            if(info.type == "vanilla_within") return;
-            else if(info.type == "mod_within") setStage(info.block, /**@type {import("./copperUtils").stageNumber}*/ (getStage(info.block.typeId) - 1));
+            if(info.type === "vanilla_within") return;
+            else if(info.type === "mod_within") setStage(info.block, /**@type {import("./copperUtils").stageNumber}*/ (getStage(info.block.typeId) - 1));
             else{
-                const isFromMod = info.type == "mod" || info.type == "mod_rod";
+                const isFromMod = info.type === "mod" || info.type === "mod_rod";
                 if(isFromMod) setStage(info.block, 0);
                 const operationCount = randomInt(3, 5);
                 for(let i = 0; i < operationCount; i++){
@@ -23,7 +23,7 @@ export default function lightningDeoxidize(data){
                     for(let j = 0; j < pathfindingCount; j++){
                         /**@type {Block | null}*/
                         const newBlock = findNextLocation(currentBlock);
-                        if(newBlock == null) continue;
+                        if(newBlock === null) continue;
                         else{
                             currentBlock = newBlock;
                             if(isFromMod || (!isFromMod && isModItem(currentBlock.typeId))) deoxidize(currentBlock);
@@ -32,7 +32,6 @@ export default function lightningDeoxidize(data){
                 }
             }
         }
-        //else world.sendMessage("invalid");
     }
 }
 
@@ -89,7 +88,7 @@ function deoxidationInfo(entity){
         let result = {meetsCondition: false};
     if(block){
         //先检查是否击中避雷针。
-        if(block.typeId == "minecraft:lightning_rod"){
+        if(block.typeId === "minecraft:lightning_rod"){
             /**0朝下 1朝上 2朝北 3朝南 4朝西 5朝东，“依附”方块为反向
              * {0 | 1 | 2 | 3 | 4 | 5 | undefined}
              * @type {unknown}*/

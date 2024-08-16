@@ -1,13 +1,14 @@
 ﻿//@ts-check
 import { EntityEquippableComponent, EquipmentSlot, GameMode, ItemStack, ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
 import { isModItem } from "../utils/namespace";
+
 /**@param {ItemUseOnBeforeEvent} data*/
 export default function placeWater(data){
-    if(data.source.typeId == "minecraft:player" && data.source.getGameMode() != GameMode.adventure && data.itemStack.typeId == "minecraft:water_bucket" && isModItem(data.block.typeId)){
+    if(data.source.typeId === "minecraft:player" && data.source.getGameMode() != GameMode.adventure && data.itemStack.typeId === "minecraft:water_bucket" && isModItem(data.block.typeId)){
         data.cancel = true;
         const player = data.source, mode = player.getGameMode();
         //只在生存模式下清空桶
-        if(mode == GameMode.survival){
+        if(mode === GameMode.survival){
             const equipment = /**@type {EntityEquippableComponent | undefined}*/ (data.source.getComponent("minecraft:equippable"));
             if(equipment) system.run(()=>{
                 equipment.getEquipmentSlot(EquipmentSlot.Mainhand).setItem(new ItemStack("minecraft:bucket", 1));

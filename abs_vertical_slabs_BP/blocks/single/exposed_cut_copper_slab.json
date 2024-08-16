@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.70",
+    "format_version": "1.21.20",
     "minecraft:block": {
         "description": {
             "identifier": "abs:exposed_cut_copper_slab",
@@ -30,6 +30,7 @@
                 "origin": [ -8.0, 0.0, -8.0 ],
                 "size": [ 16.0, 16.0, 8.0 ]
             },
+            "minecraft:custom_components": ["abs:stone_tier", "abs:oxidizable"],
             "minecraft:geometry": "geometry.north",
             "tag:metal": {},
             "tag:copper": {},
@@ -41,62 +42,7 @@
                 "explosion_resistance": 6.0
             },
             "minecraft:light_dampening": 1,
-            "minecraft:loot": "loot_tables/empty.json",
-            "minecraft:on_player_destroyed": {
-                "condition": "query.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_pickaxe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_pickaxe')",
-                "event": "drop"
-            },
-            "minecraft:on_interact": {
-                "condition": "query.is_item_name_any('slot.weapon.mainhand', 'minecraft:honeycomb') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe')",
-                "event": "interact"
-            },
-            "minecraft:random_ticking": {
-                "on_tick": {
-                    "condition": "math.random_integer(1, 1875) <= 128",
-                    "event": "oxidize"
-                }
-            }
-        },
-        "events": {
-            "drop": {
-                "spawn_loot": {
-                    "table": "loot_tables/blocks/exposed_cut_copper_slab.json"
-                }
-            },
-            "interact": {
-                "sequence": [
-                    {
-                        "condition": "query.is_item_name_any('slot.weapon.mainhand', 'minecraft:honeycomb')",
-                        "decrement_stack": {},
-                        "run_command": {
-                            "command": [
-                                "playsound copper.wax.on @a ~~~",
-                                "particle abs:wax_on ~~~"
-                            ]
-                        }
-                    },
-                    {
-                        "condition": "query.is_item_name_any('slot.weapon.mainhand', 'minecraft:wooden_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:stone_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:iron_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:golden_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:diamond_axe') || query.is_item_name_any('slot.weapon.mainhand', 'minecraft:netherite_axe')",
-                        "damage": {
-                            "amount": 1,
-                            "target": "item",
-                            "type": "durability"
-                        },
-                        "run_command": {
-                            "command": [
-                                "playsound scrape @a ~~~",
-                                "particle abs:deoxidize ~~~"
-                            ]
-                        }
-                    }
-                ]
-            },
-            "oxidize": {
-                "run_command": {
-                    "command": "scriptevent abs:oxidize",
-                    "target": "self"
-                }
-            }
+            "minecraft:loot": "loot_tables/exposed_cut_copper_slab.json"
         },
         "permutations": [
             {

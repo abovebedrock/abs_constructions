@@ -5,7 +5,7 @@
  */
 export function randomInt(min, max){
     let random = Math.random();
-    while(random == 1) random = Math.random();
+    while(random === 1) random = Math.random();
     return Math.floor(random * (max - min + 1)) + min;
 }
 
@@ -14,5 +14,7 @@ export function randomInt(min, max){
  * @returns {boolean}
  */
 export function decide(possibility){
-    return Math.random() < possibility;
+    if(possibility === 1) return true;
+    else if(possibility === 0) return false;
+    else return Math.random() < possibility;
 }

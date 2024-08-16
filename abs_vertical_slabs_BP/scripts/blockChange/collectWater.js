@@ -1,13 +1,14 @@
 ﻿//@ts-check
 import { Block, GameMode, ItemUseOnBeforeEvent, world } from "@minecraft/server";
 import { isModItem } from "../utils/namespace";
+
 /**@param {ItemUseOnBeforeEvent} data*/
 export default function collectWater(data){
     world.sendMessage(meetConversionConditions(data.block)?"true":"false");
     if( //为非冒险模式玩家
-        data.source.typeId == "minecraft:player" && data.source.getGameMode() != GameMode.adventure
+        data.source.typeId === "minecraft:player" && data.source.getGameMode() != GameMode.adventure
         //为空桶和模组方块
-     && data.itemStack.typeId == "minecraft:bucket" && isModItem(data.block.typeId)
+     && data.itemStack.typeId === "minecraft:bucket" && isModItem(data.block.typeId)
         //模组方块满足无限水条件
      && meetConversionConditions(data.block)
     ){
@@ -43,19 +44,14 @@ export default function collectWater(data){
  */
 function meetConversionConditions(block){
     const above = block.above(1);
-    if(above) return(
-        //@ts-ignore 又是另一个扩展没更新的问题
+    if(above) return!!(
         block.isWaterlogged
-        //@ts-ignore
-     && (above.isWaterlogged || above.typeId == "minecraft:water")
-     && (   //@ts-ignore
-            (block.north(1) && (block.north(1).isWaterlogged || block.north(1).typeId == "minecraft:water"))
-            //@ts-ignore
-         || (block.south(1) && (block.south(1).isWaterlogged || block.south(1).typeId == "minecraft:water"))
-            //@ts-ignore
-         || (block.west(1) && (block.west(1).isWaterlogged || block.west(1).typeId == "minecraft:water"))
-            //@ts-ignore
-         || (block.east(1) && (block.east(1).isWaterlogged || block.east(1).typeId == "minecraft:water"))
+     && (above.isWaterlogged || above.typeId === "minecraft:water")
+     && (
+            (block.north(1) && (/**@type {Block}*/ (block.north(1)).isWaterlogged || /**@type {Block}*/ (block.north(1)).typeId === "minecraft:water"))
+         || (block.south(1) && (/**@type {Block}*/ (block.south(1)).isWaterlogged || /**@type {Block}*/ (block.south(1)).typeId === "minecraft:water"))
+         || (block.west(1) && (/**@type {Block}*/ (block.west(1)).isWaterlogged || /**@type {Block}*/ (block.west(1)).typeId === "minecraft:water"))
+         || (block.east(1) && (/**@type {Block}*/ (block.east(1)).isWaterlogged || /**@type {Block}*/ (block.east(1)).typeId === "minecraft:water"))
         )
     );
     else return false;
