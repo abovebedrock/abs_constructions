@@ -4,7 +4,7 @@ import { isModItem } from "../utils/namespace";
 
 /**@param {ItemUseOnBeforeEvent} data*/
 export default function collectWater(data){
-    world.sendMessage(meetConversionConditions(data.block)?"true":"false");
+    world.sendMessage(`${meetConversionConditions(data.block)}`);
     if( //为非冒险模式玩家
         data.source.typeId === "minecraft:player" && data.source.getGameMode() != GameMode.adventure
         //为空桶和模组方块

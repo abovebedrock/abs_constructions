@@ -114,10 +114,6 @@ function deoxidationInfo(entity){
                 case 5:
                     blockAttached = block.west(1);
                     break;
-                default:
-                    console.error(`Direction for lightning rod get other cases: ${direction}`);
-                    world.sendMessage("§e您有一条新的 bug 消息，请及时查收！");
-                    break;
             }
             if(blockAttached && hasOxidation(blockAttached.typeId)) result = {
                 meetsCondition: true,
