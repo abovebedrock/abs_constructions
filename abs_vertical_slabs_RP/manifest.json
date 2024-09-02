@@ -6,9 +6,9 @@
     "header": {
         "name": "半砖加强",
         "description": "基岩之上服务器模组。提供生存友好的竖向半砖和混合半砖。",
-        "min_engine_version": [ 1, 21, 1 ],
+        "min_engine_version": [ 1, 21, 20 ],
         "uuid": "c900f26b-ccdd-4817-8d52-aae289ae3fc7",
-        "version": [ 1, 0, 0 ]
+        "version": [ 1, 1, 0 ]
     },
     "modules": [
         {
