@@ -8,7 +8,7 @@ export default function placeBlock(data){
         //1.判断在哪一半并放置那一半的半砖（计划1.2.0加入）
         //2.判断是否为合并操作（计划1.2.0加入）
         //判断是否需要含水
-        if(data.block.typeId === "minecraft:water" || data.block.isWaterlogged){
+        if((data.block.typeId === "minecraft:water" && data.block.permutation.getState("liquid_depth") === 0) || data.block.isWaterlogged){
             const direction = /**@type {"north" | "south" | "west" | "east"}*/ (data.permutationBeingPlaced.getState("minecraft:cardinal_direction"));
             /**@type {"0_degrees" | "90_degrees" | "180_degrees" | "270_degrees" | ""}*/
             let rotation = "";
