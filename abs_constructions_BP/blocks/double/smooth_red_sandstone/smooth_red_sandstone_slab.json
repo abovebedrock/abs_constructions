@@ -1,0 +1,86 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:smooth_red_sandstone__smooth_red_sandstone_double_slab"
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "redsandstone_top",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:custom_components": ["abs:wooden_tier"],
+            "minecraft:geometry": "geometry.double",
+            "tag:stone": {},
+            "minecraft:map_color": "#D87F33",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 6.67,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 4.47
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 4.47
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 4.47
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 4.47
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 4.47
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 4.47
+                    },
+                    {
+                        "item": "minecraft:wooden_pickaxe",
+                        "destroy_speed": 1
+                    },
+                    {
+                        "item": "minecraft:stone_pickaxe",
+                        "destroy_speed": 0.5
+                    },
+                    {
+                        "item": "minecraft:iron_pickaxe",
+                        "destroy_speed": 0.3
+                    },
+                    {
+                        "item": "minecraft:golden_pickaxe",
+                        "destroy_speed": 0.17
+                    },
+                    {
+                        "item": "minecraft:diamond_pickaxe",
+                        "destroy_speed": 0.27
+                    },
+                    {
+                        "item": "minecraft:netherite_pickaxe",
+                        "destroy_speed": 0.23
+                    }
+                ]
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6.0
+            },
+            "minecraft:light_dampening": 1,
+            "minecraft:loot": "loot_tables/double/smooth_red_sandstone/smooth_red_sandstone_slab.json"
+        }
+    }
+}

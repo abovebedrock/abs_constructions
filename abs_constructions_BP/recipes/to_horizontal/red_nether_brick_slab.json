@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_red_nether_brick_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:red_nether_brick_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:red_nether_brick_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:red_nether_brick_slab",
+            "count": 1
+        }
+    }
+}

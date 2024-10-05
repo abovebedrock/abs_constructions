@@ -1,0 +1,227 @@
+{
+    "resource_pack_name": "更多建筑方块",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "debug": {
+            "textures": ["textures/blocks/debug"]
+        },
+        "cut_sandstone_slab_side": {
+            "textures": [ "textures/blocks/sandstone_smooth" ]
+        },
+        "cut_red_sandstone_slab_side": {
+            "textures": [ "textures/blocks/red_sandstone_smooth" ]
+        },
+        "quartz_block_bottom": {
+            "textures": [ "textures/blocks/quartz_block_bottom" ]
+        },
+        "stone_slab_side_rotated": {
+            "textures": [ "textures/blocks/stone_slab_side_rotated" ]
+        },
+        "glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_slab" ]
+        },
+        "white_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_white_slab" ]
+        },
+        "light_gray_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_light_gray_slab" ]
+        },
+        "gray_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_gray_slab" ]
+        },
+        "black_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_black_slab" ]
+        },
+        "brown_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_brown_slab" ]
+        },
+        "red_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_red_slab" ]
+        },
+        "orange_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_orange_slab" ]
+        },
+        "yellow_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_yellow_slab" ]
+        },
+        "lime_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_lime_slab" ]
+        },
+        "green_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_green_slab" ]
+        },
+        "cyan_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_cyan_slab" ]
+        },
+        "light_blue_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_light_blue_slab" ]
+        },
+        "blue_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_blue_slab" ]
+        },
+        "purple_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_purple_slab" ]
+        },
+        "magenta_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_magenta_slab" ]
+        },
+        "pink_glass_slab": {
+            "textures": [ "textures/blocks/glass_slab/glass_pink_slab" ]
+        },
+        "glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_slab_rotated" ]
+        },
+        "white_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_white_slab_rotated" ]
+        },
+        "light_gray_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_light_gray_slab_rotated" ]
+        },
+        "gray_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_gray_slab_rotated" ]
+        },
+        "black_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_black_slab_rotated" ]
+        },
+        "brown_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_brown_slab_rotated" ]
+        },
+        "red_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_red_slab_rotated" ]
+        },
+        "orange_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_orange_slab_rotated" ]
+        },
+        "yellow_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_yellow_slab_rotated" ]
+        },
+        "lime_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_lime_slab_rotated" ]
+        },
+        "green_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_green_slab_rotated" ]
+        },
+        "cyan_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_cyan_slab_rotated" ]
+        },
+        "light_blue_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_light_blue_slab_rotated" ]
+        },
+        "blue_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_blue_slab_rotated" ]
+        },
+        "purple_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_purple_slab_rotated" ]
+        },
+        "magenta_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_magenta_slab_rotated" ]
+        },
+        "pink_glass_slab_rotated": {
+            "textures": [ "textures/blocks/glass_slab/glass_pink_slab_rotated" ]
+        },
+        "glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_stairs_front" ]
+        },
+        "white_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_white_stairs_front" ]
+        },
+        "light_gray_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_light_gray_stairs_front" ]
+        },
+        "gray_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_gray_stairs_front" ]
+        },
+        "black_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_black_stairs_front" ]
+        },
+        "brown_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_brown_stairs_front" ]
+        },
+        "red_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_red_stairs_front" ]
+        },
+        "orange_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_orange_stairs_front" ]
+        },
+        "yellow_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_yellow_stairs_front" ]
+        },
+        "lime_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_lime_stairs_front" ]
+        },
+        "green_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_green_stairs_front" ]
+        },
+        "cyan_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_cyan_stairs_front" ]
+        },
+        "light_blue_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_light_blue_stairs_front" ]
+        },
+        "blue_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_blue_stairs_front" ]
+        },
+        "purple_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_purple_stairs_front" ]
+        },
+        "magenta_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_magenta_stairs_front" ]
+        },
+        "pink_glass_stairs_front": {
+            "textures": [ "textures/blocks/glass_stairs/glass_pink_stairs_front" ]
+        },
+        "glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_stairs_side" ]
+        },
+        "white_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_white_stairs_side" ]
+        },
+        "light_gray_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_light_gray_stairs_side" ]
+        },
+        "gray_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_gray_stairs_side" ]
+        },
+        "black_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_black_stairs_side" ]
+        },
+        "brown_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_brown_stairs_side" ]
+        },
+        "red_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_red_stairs_side" ]
+        },
+        "orange_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_orange_stairs_side" ]
+        },
+        "yellow_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_yellow_stairs_side" ]
+        },
+        "lime_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_lime_stairs_side" ]
+        },
+        "green_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_green_stairs_side" ]
+        },
+        "cyan_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_cyan_stairs_side" ]
+        },
+        "light_blue_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_light_blue_stairs_side" ]
+        },
+        "blue_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_blue_stairs_side" ]
+        },
+        "purple_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_purple_stairs_side" ]
+        },
+        "magenta_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_magenta_stairs_side" ]
+        },
+        "pink_glass_stairs_side": {
+            "textures": [ "textures/blocks/glass_stairs/glass_pink_stairs_side" ]
+        }
+    }
+}

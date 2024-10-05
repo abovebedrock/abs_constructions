@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_diorite_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:diorite_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:diorite_slab"
+            }
+        ],
+        "result": {
+            "item": "abs:diorite_slab",
+            "count": 1
+        }
+    }
+}

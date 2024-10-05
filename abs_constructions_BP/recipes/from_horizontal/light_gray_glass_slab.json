@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_light_gray_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:light_gray_glass_hlab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:light_gray_glass_hlab"
+            }
+        ],
+        "result": {
+            "item": "abs:light_gray_glass_slab",
+            "count": 1
+        }
+    }
+}

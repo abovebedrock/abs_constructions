@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_mud_brick_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:mud_brick_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:mud_brick_slab"
+            }
+        ],
+        "result": {
+            "item": "abs:mud_brick_slab",
+            "count": 1
+        }
+    }
+}

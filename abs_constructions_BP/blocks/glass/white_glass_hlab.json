@@ -1,0 +1,105 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:white_glass_hlab",
+            "traits": {
+                "minecraft:placement_position": {"enabled_states": ["minecraft:vertical_half"]}
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.glass"
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "white_stained_glass",
+                    "render_method": "blend"
+                },
+                "down": {
+                    "texture": "white_stained_glass",
+                    "render_method": "blend"
+                },
+                "*": {
+                    "texture": "white_glass_slab",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 8.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 8.0, 16.0 ]
+            },
+            "minecraft:custom_components": ["abs:silk_touch"],
+            "minecraft:geometry": "geometry.glass_slab_lower",
+            "minecraft:map_color": "#FFFFFF",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 0.2
+                    }
+                ]
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            },
+            "minecraft:loot": "loot_tables/glass/white_glass_hlab.json"
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:vertical_half') == 'bottom'",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [ -8.0, 0.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 0.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.glass_slab_lower"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:vertical_half') == 'top'",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [ -8.0, 8.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 8.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.glass_slab_upper"
+                }
+            }
+        ]
+    }
+}

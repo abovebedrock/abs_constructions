@@ -1,0 +1,155 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:light_gray_glass_stairs",
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": ["minecraft:cardinal_direction"]
+                },
+                "minecraft:placement_position": {
+                    "enabled_states": ["minecraft:vertical_half"]
+                }
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.glass"
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "vanilla": {
+                    "texture": "light_gray_stained_glass",
+                    "render_method": "blend"
+                },
+                "front": {
+                    "texture": "light_gray_glass_stairs_front",
+                    "render_method": "blend"
+                },
+                "slab": {
+                    "texture": "light_gray_glass_slab",
+                    "render_method": "blend"
+                },
+                "slab_rotated": {
+                    "texture": "light_gray_glass_slab_rotated",
+                    "render_method": "blend"
+                },
+                "side": {
+                    "texture": "light_gray_glass_stairs_side",
+                    "render_method": "blend"
+                },
+                "*": "vanilla"
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 8.0, 16.0 ]
+            },
+            "minecraft:custom_components": ["abs:silk_touch"],
+            "minecraft:geometry": "geometry.glass_stairs_north",
+            "minecraft:map_color": "#999999",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 0.2
+                    }
+                ]
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            },
+            "minecraft:loot": "loot_tables/glass/light_gray_glass_stairs.json"
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:vertical_half') == 'bottom'",
+                "components": {
+                    "minecraft:geometry": "geometry.glass_stairs_north"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:vertical_half') == 'bottom'",
+                "components": {
+                    "minecraft:geometry": "geometry.glass_stairs_south"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:vertical_half') == 'bottom'",
+                "components": {
+                    "minecraft:geometry": "geometry.glass_stairs_west"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:vertical_half') == 'bottom'",
+                "components": {
+                    "minecraft:geometry": "geometry.glass_stairs_east"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:vertical_half') == 'top'",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 8.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.glass_stairs_north_down"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:vertical_half') == 'top'",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 8.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.glass_stairs_south_down"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:vertical_half') == 'top'",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 8.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.glass_stairs_west_down"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:vertical_half') == 'top'",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 8.0, -8.0 ],
+                        "size": [ 16.0, 8.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.glass_stairs_east_down"
+                }
+            }
+        ]
+    }
+}

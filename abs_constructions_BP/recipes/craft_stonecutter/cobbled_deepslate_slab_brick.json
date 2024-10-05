@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_cobbled_deepslate_slab_brick"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:cobbled_deepslate"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:cobbled_deepslate"
+            }
+        ],
+        "result": {
+            "item": "abs:deepslate_brick_slab",
+            "count": 2
+        }
+    }
+}

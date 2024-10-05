@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_sandstone_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:sandstone_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:sandstone_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:sandstone_slab",
+            "count": 1
+        }
+    }
+}

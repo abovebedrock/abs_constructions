@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_tuff_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:tuff_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:tuff_slab"
+            }
+        ],
+        "result": {
+            "item": "abs:tuff_slab",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_oak_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "wooden_slab",
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:oak_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:oak_slab"
+            }
+        ],
+        "result": {
+            "item": "abs:oak_slab",
+            "count": 1
+        }
+    }
+}

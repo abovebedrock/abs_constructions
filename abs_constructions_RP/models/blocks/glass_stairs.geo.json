@@ -1,0 +1,347 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_north",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 8, 16],
+                        "uv": {
+                            "up": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "slab"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                            "north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"},
+                            "south": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "slab"},
+                            "west": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "side"},
+                            "east": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "side"}
+                        }
+                    },
+                    {
+                        "origin": [-8, 8, -8],
+                        "size": [16, 8, 8],
+                        "uv": {
+                            "up": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "slab"},
+                            "north": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"},
+                            "south": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "front"},
+                            "west": {"uv": [0, 0], "uv_size": [8, 8], "material_instance": "side"},
+                            "east": {"uv": [8, 0], "uv_size": [8, 8], "material_instance": "side"}
+                        }
+                    }
+               ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_south",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 8, 16],
+                        "uv": {
+                            "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "slab"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                            "north": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "slab"},
+                            "south": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"},
+                            "west": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "side"},
+                            "east": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "side"}
+                        }
+                    },
+                    {
+                        "origin": [-8, 8, 0],
+                        "size": [16, 8, 8],
+                        "uv": {
+                            "up": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "slab"},
+                            "north": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "front"},
+                            "south": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"},
+                            "west": {"uv": [8, 0], "uv_size": [-8, 8], "material_instance": "side"},
+                            "east": {"uv": [16, 0], "uv_size": [-8, 8], "material_instance": "side"}
+                        }
+                    }
+                ]
+            }],
+            "item_display_transforms": {
+                "thirdperson_righthand": {
+                    "rotation": [75, 132, 0],
+                    "translation": [0, 2.5, 0],
+                    "scale": [0.375, 0.375, 0.375],
+                    "rotation_pivot": [0, 0, 0],
+                    "scale_pivot": [0, 0, 0]
+                },
+                "firstperson_righthand": {
+                    "rotation": [0, 135, 0],
+                    "translation": [0, 0, 0.5],
+                    "scale": [0.4, 0.4, 0.4],
+                    "rotation_pivot": [0, 0, 0],
+                    "scale_pivot": [0, 0, 0]
+                },
+                "gui": {
+                    "rotation": [30, 225, 0],
+                    "translation": [0, 0, 0],
+                    "scale": [0.625, 0.625, 0.625],
+                    "rotation_pivot": [0, 0, 0],
+                    "scale_pivot": [0, 0, 0]
+                },
+                "fixed": {
+                    "rotation": [0, 90, 0],
+                    "translation": [0, 0, 0],
+                    "scale": [0.5, 0.5, 0.5],
+                    "rotation_pivot": [0, 0, 0],
+                    "scale_pivot": [0, 0, 0]
+                }
+            }
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_west",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 8, 16],
+                        "uv": {
+                            "up": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "slab_rotated"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                            "north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "side"},
+                            "south": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "side"},
+                            "west": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"},
+                            "east": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "slab"}
+                        }
+                    },
+                    {
+                        "origin": [0, 8, -8],
+                        "size": [8, 8, 16],
+                        "uv": {
+                            "up": {"uv": [8, 16], "uv_size": [-8, -16], "material_instance": "slab_rotated"},
+                            "north": {"uv": [8, 0], "uv_size": [8, 8], "material_instance": "side"},
+                            "south": {"uv": [0, 0], "uv_size": [8, 8], "material_instance": "side"},
+                            "west": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"},
+                            "east": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "front"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_east",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 8, 16],
+                        "uv": {
+                            "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "slab_rotated"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                            "north": {"uv": [16, 8], "uv_size": [-16, 8], "material_instance": "side"},
+                            "south": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "side"},
+                            "west": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "slab"},
+                            "east": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"}
+                        }
+                    },
+                    {
+                        "origin": [-8, 8, -8],
+                        "size": [8, 8, 16],
+                        "uv": {
+                            "up": {"uv": [0, 0], "uv_size": [8, 16], "material_instance": "slab_rotated"},
+                            "north": {"uv": [16, 0], "uv_size": [-8, 8], "material_instance": "side"},
+                            "south": {"uv": [8, 0], "uv_size": [8, 8], "material_instance": "side"},
+                            "west": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "front"},
+                            "east": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_north_down",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0],
+                    "cubes": [
+                        {
+                            "origin": [-8, 8, -8],
+                            "size": [16, 8, 16],
+                            "uv": {
+                                "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                                "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "slab"},
+                                "north": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"},
+                                "south": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "slab"},
+                                "west": {"uv": [16, 16], "uv_size": [-16, -8], "material_instance": "side"},
+                                "east": {"uv": [0, 16], "uv_size": [16, -8], "material_instance": "side"}
+                            }
+                        },
+                        {
+                            "origin": [-8, 0, -8],
+                            "size": [16, 8, 8],
+                            "uv": {
+                                "down": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "slab"},
+                                "north": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"},
+                                "south": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "front"},
+                                "west": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "side"},
+                                "east": {"uv": [8, 8], "uv_size": [8, -8], "material_instance": "side"}
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_south_down",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0],
+                    "cubes": [
+                        {
+                            "origin": [-8, 8, -8],
+                            "size": [16, 8, 16],
+                            "uv": {
+                                "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                                "down": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "slab"},
+                                "north": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "slab"},
+                                "south": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"},
+                                "west": {"uv": [0, 16], "uv_size": [16, -8], "material_instance": "side"},
+                                "east": {"uv": [16, 16], "uv_size": [-16, -8], "material_instance": "side"}
+                            }
+                        },
+                        {
+                            "origin": [-8, 0, 0],
+                            "size": [16, 8, 8],
+                            "uv": {
+                                "down": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "slab"},
+                                "north": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "front"},
+                                "south": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"},
+                                "west": {"uv": [8, 8], "uv_size": [8, -8], "material_instance": "side"},
+                                "east": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "side"}
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_west_down",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0],
+                    "cubes": [
+                        {
+                            "origin": [-8, 8, -8],
+                            "size": [16, 8, 16],
+                            "uv": {
+                                "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                                "down": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "slab_rotated"},
+                                "north": {"uv": [0, 16], "uv_size": [16, -8], "material_instance": "side"},
+                                "south": {"uv": [16, 16], "uv_size": [-16, -8], "material_instance": "side"},
+                                "west": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"},
+                                "east": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "slab"}
+                            }
+                        },
+                        {
+                            "origin": [0, 0, -8],
+                            "size": [8, 8, 16],
+                            "uv": {
+                                "down": {"uv": [8, 16], "uv_size": [-8, -16], "material_instance": "slab_rotated"},
+                                "north": {"uv": [8, 8], "uv_size": [8, -8], "material_instance": "side"},
+                                "south": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "side"},
+                                "west": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"},
+                                "east": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "front"}
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": {
+                "identifier": "geometry.glass_stairs_east_down",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [
+                {
+                    "name": "root",
+                    "pivot": [0, 0, 0],
+                    "cubes": [
+                        {
+                            "origin": [-8, 8, -8],
+                            "size": [16, 8, 16],
+                            "uv": {
+                                "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "vanilla"},
+                                "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "slab_rotated"},
+                                "north": {"uv": [16, 16], "uv_size": [-16, -8], "material_instance": "side"},
+                                "south": {"uv": [0, 16], "uv_size": [16, -8], "material_instance": "side"},
+                                "west": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "slab"},
+                                "east": {"uv": [0, 0], "uv_size": [16, 8], "material_instance": "vanilla"}
+                            }
+                        },
+                        {
+                            "origin": [-8, 0, -8],
+                            "size": [8, 8, 16],
+                            "uv": {
+                                "down": {"uv": [0, 0], "uv_size": [8, 16], "material_instance": "slab_rotated"},
+                                "north": {"uv": [16, 8], "uv_size": [-8, -8], "material_instance": "side"},
+                                "south": {"uv": [8, 8], "uv_size": [8, -8], "material_instance": "side"},
+                                "west": {"uv": [16, 8], "uv_size": [-16, -8], "material_instance": "front"},
+                                "east": {"uv": [0, 8], "uv_size": [16, 8], "material_instance": "vanilla"}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+   ]
+}

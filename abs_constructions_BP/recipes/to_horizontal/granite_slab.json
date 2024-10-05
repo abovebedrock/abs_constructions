@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_granite_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:granite_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:granite_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:granite_slab",
+            "count": 1
+        }
+    }
+}

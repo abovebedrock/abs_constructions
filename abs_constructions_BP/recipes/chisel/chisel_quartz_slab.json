@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:chisel_quartz_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:quartz_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:quartz_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:chiseled_quartz_block",
+            "count": 1
+        }
+    }
+}

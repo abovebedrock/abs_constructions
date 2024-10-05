@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_dark_prismarine_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:dark_prismarine"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:dark_prismarine"
+            }
+        ],
+        "result": {
+            "item": "abs:dark_prismarine_slab",
+            "count": 2
+        }
+    }
+}

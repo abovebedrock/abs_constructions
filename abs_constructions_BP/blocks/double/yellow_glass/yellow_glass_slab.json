@@ -1,0 +1,60 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:yellow_glass__yellow_glass_double_slab"
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "yellow_stained_glass",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:custom_components": ["abs:silk_touch"],
+            "minecraft:geometry": "geometry.double",
+            "minecraft:map_color": "#E5E533",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.3,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 0.2
+                    }
+                ]
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.3
+            },
+            "minecraft:loot": "loot_tables/double/yellow_glass/yellow_glass_slab.json"
+        }
+    }
+}

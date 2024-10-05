@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_polished_blackstone_slab_brick"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:polished_blackstone"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:polished_blackstone"
+            }
+        ],
+        "result": {
+            "item": "abs:polished_blackstone_brick_slab",
+            "count": 2
+        }
+    }
+}

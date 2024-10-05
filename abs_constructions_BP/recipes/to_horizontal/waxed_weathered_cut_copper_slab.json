@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_waxed_weathered_cut_copper_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:waxed_weathered_cut_copper_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:waxed_weathered_cut_copper_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:waxed_weathered_cut_copper_slab",
+            "count": 1
+        }
+    }
+}

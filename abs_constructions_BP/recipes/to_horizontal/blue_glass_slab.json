@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_blue_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:blue_glass_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:blue_glass_slab"
+            }
+        ],
+        "result": {
+            "item": "abs:blue_glass_hlab",
+            "count": 1
+        }
+    }
+}

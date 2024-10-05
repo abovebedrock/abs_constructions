@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_andesite_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:andesite_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:andesite_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:andesite_slab",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_white_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:white_glass_hlab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:white_glass_hlab"
+            }
+        ],
+        "result": {
+            "item": "abs:white_glass_slab",
+            "count": 1
+        }
+    }
+}

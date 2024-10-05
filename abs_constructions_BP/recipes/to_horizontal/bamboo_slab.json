@@ -1,0 +1,29 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:toh_bamboo_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "wooden_slab",
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:bamboo_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:bamboo_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:bamboo_slab",
+            "count": 1
+        }
+    }
+}

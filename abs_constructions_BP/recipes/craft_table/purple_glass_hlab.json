@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:craft_purple_glass_hlab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:purple_stained_glass"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:purple_stained_glass"
+            }
+        ],
+        "result": {
+            "item": "abs:purple_glass_hlab",
+            "count": 6
+        }
+    }
+}

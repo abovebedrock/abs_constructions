@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_white_glass_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:white_stained_glass"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:white_stained_glass"
+            }
+        ],
+        "result": {
+            "item": "abs:white_glass_slab",
+            "count": 2
+        }
+    }
+}

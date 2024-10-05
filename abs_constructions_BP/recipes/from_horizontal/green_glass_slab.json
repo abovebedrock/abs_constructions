@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_green_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:green_glass_hlab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:green_glass_hlab"
+            }
+        ],
+        "result": {
+            "item": "abs:green_glass_slab",
+            "count": 1
+        }
+    }
+}

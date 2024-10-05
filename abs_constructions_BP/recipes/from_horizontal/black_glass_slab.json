@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_black_glass"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:black_glass_hlab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:black_glass_hlab"
+            }
+        ],
+        "result": {
+            "item": "abs:black_glass_slab",
+            "count": 1
+        }
+    }
+}

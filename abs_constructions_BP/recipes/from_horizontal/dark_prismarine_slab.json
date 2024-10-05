@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:fromh_dark_prismarine_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:dark_prismarine_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:dark_prismarine_slab"
+            }
+        ],
+        "result": {
+            "item": "abs:dark_prismarine_slab",
+            "count": 1
+        }
+    }
+}

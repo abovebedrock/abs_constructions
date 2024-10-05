@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:chisel_red_sandstone_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:red_sandstone_slab"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:red_sandstone_slab"
+            }
+        ],
+        "result": {
+            "item": "minecraft:chiseled_red_sandstone",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "abs:craftsc_yellow_glass_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:yellow_stained_glass"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "minecraft:yellow_stained_glass"
+            }
+        ],
+        "result": {
+            "item": "abs:yellow_glass_slab",
+            "count": 2
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [ "LJM12914" ]
+    },
+    "header": {
+        "name": "更多建筑方块",
+        "description": "基岩之上服务器模组。提供生存友好的竖向半砖、切割玻璃和混合半砖。",
+        "min_engine_version": [ 1, 21, 30 ],
+        "uuid": "c900f26b-ccdd-4817-8d52-aae289ae3fc7",
+        "version": [ 1, 2, 0 ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "0c84a1d0-6414-4c12-8e39-1755d1004800",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}
