@@ -1,0 +1,167 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.barrel_up",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 16],
+                        "uv": {
+                            "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "up"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "down"},
+                            "north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "side"},
+                            "south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "side"},
+                            "west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "side"},
+                            "east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "side"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.barrel_down",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 16],
+                        "uv": {
+                            "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "down"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "up"},
+                            "north": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "side"},
+                            "south": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "side"},
+                            "west": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "side"},
+                            "east": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "side"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.barrel_north",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 16],
+                        "uv": {
+                            "up": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "side"},
+                            "down": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "side"},
+                            "north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "up"},
+                            "south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "down"},
+                            "west": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 90, "material_instance": "side"},
+                            "east": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90, "material_instance": "side"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.barrel_south",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 16],
+                        "uv": {
+                            "up": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "side"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "side"},
+                            "north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "down"},
+                            "south": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "up"},
+                            "west": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90, "material_instance": "side"},
+                            "east": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 90, "material_instance": "side"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.barrel_west",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 16],
+                        "uv": {
+                            "up": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90, "material_instance": "side"},
+                            "down": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90, "material_instance": "side"},
+                            "north": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90, "material_instance": "side"},
+                            "south": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 90, "material_instance": "side"},
+                            "west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "up"},
+                            "east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "down"}
+                        }
+                    }
+                ]
+            }]
+        },
+        {
+            "description": {
+                "identifier": "geometry.barrel_east",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2
+            },
+            "bones": [{
+                "name": "root",
+                "pivot": [0, 0, 0],
+                "cubes": [
+                    {
+                        "origin": [-8, 0, -8],
+                        "size": [16, 16, 16],
+                        "uv": {
+                            "up": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 90, "material_instance": "side"},
+                            "down": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 90, "material_instance": "side"},
+                            "north": {"uv": [16, 16], "uv_size": [-16, -16], "uv_rotation": 90, "material_instance": "side"},
+                            "south": {"uv": [0, 0], "uv_size": [16, 16], "uv_rotation": 90, "material_instance": "side"},
+                            "west": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "down"},
+                            "east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "up"}
+                        }
+                    }
+                ]
+            }]
+        }
+    ]
+}

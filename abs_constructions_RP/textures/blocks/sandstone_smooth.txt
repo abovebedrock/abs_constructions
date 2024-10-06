@@ -1,1 +1,0 @@
-https://github.com/Mojang/bedrock-samples/blob/main/resource_pack/textures/blocks/sandstone_smooth.png

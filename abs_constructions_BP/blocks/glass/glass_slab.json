@@ -21,18 +21,14 @@
                     "texture": "glass",
                     "render_method": "blend"
                 },
-                "normal": {
+                "slab": {
                     "texture": "glass_slab",
                     "render_method": "blend"
                 },
-                "rotated": {
-                    "texture": "glass_slab_rotated",
+                "*": {
+                    "texture": "glass",
                     "render_method": "blend"
-                },
-                "up": "normal",
-                "down": "normal",
-                "side": "rotated",
-                "*": "vanilla"
+                }
             },
             "minecraft:selection_box": {
                 "origin": [ -8.0, 0.0, -8.0 ],
@@ -90,25 +86,7 @@
                         "origin": [ -8.0, 0.0, -8.0 ],
                         "size": [ 16.0, 16.0, 8.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_north",
-                    "minecraft:material_instances": {
-                        "vanilla": {
-                            "texture": "glass",
-                            "render_method": "blend"
-                        },
-                        "normal": {
-                            "texture": "glass_slab",
-                            "render_method": "blend"
-                        },
-                        "rotated": {
-                            "texture": "glass_slab_rotated",
-                            "render_method": "blend"
-                        },
-                        "up": "normal",
-                        "down": "normal",
-                        "side": "rotated",
-                        "*": "vanilla"
-                    }
+                    "minecraft:geometry": "geometry.glass_north"
                 }
             },
             {
@@ -122,25 +100,7 @@
                         "origin": [ -8.0, 0.0, 0.0 ],
                         "size": [ 16.0, 16.0, 8.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_south",
-                    "minecraft:material_instances": {
-                        "vanilla": {
-                            "texture": "glass",
-                            "render_method": "blend"
-                        },
-                        "normal": {
-                            "texture": "glass_slab",
-                            "render_method": "blend"
-                        },
-                        "rotated": {
-                            "texture": "glass_slab_rotated",
-                            "render_method": "blend"
-                        },
-                        "up": "normal",
-                        "down": "normal",
-                        "side": "rotated",
-                        "*": "vanilla"
-                    }
+                    "minecraft:geometry": "geometry.glass_south"
                 }
             },
             {
@@ -154,25 +114,7 @@
                         "origin": [ 0.0, 0.0, -8.0 ],
                         "size": [ 8.0, 16.0, 16.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_west",
-                    "minecraft:material_instances": {
-                        "vanilla": {
-                            "texture": "glass",
-                            "render_method": "blend"
-                        },
-                        "normal": {
-                            "texture": "glass_slab",
-                            "render_method": "blend"
-                        },
-                        "rotated": {
-                            "texture": "glass_slab_rotated",
-                            "render_method": "blend"
-                        },
-                        "up": "rotated",
-                        "down": "rotated",
-                        "side": "rotated",
-                        "*": "vanilla"
-                    }
+                    "minecraft:geometry": "geometry.glass_west"
                 }
             },
             {
@@ -186,25 +128,7 @@
                         "origin": [ -8.0, 0.0, -8.0 ],
                         "size": [ 8.0, 16.0, 16.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_east",
-                    "minecraft:material_instances": {
-                        "vanilla": {
-                            "texture": "glass",
-                            "render_method": "blend"
-                        },
-                        "normal": {
-                            "texture": "glass_slab",
-                            "render_method": "blend"
-                        },
-                        "rotated": {
-                            "texture": "glass_slab_rotated",
-                            "render_method": "blend"
-                        },
-                        "up": "rotated",
-                        "down": "rotated",
-                        "side": "rotated",
-                        "*": "vanilla"
-                    }
+                    "minecraft:geometry": "geometry.glass_east"
                 }
             }
         ]

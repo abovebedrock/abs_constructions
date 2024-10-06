@@ -30,10 +30,6 @@
                     "texture": "brown_glass_slab",
                     "render_method": "blend"
                 },
-                "slab_rotated": {
-                    "texture": "brown_glass_slab_rotated",
-                    "render_method": "blend"
-                },
                 "side": {
                     "texture": "brown_glass_stairs_side",
                     "render_method": "blend"
@@ -46,7 +42,7 @@
             },
             "minecraft:collision_box": {
                 "origin": [ -8.0, 0.0, -8.0 ],
-                "size": [ 16.0, 8.0, 16.0 ]
+                "size": [ 16.0, 10.0, 16.0 ]
             },
             "minecraft:custom_components": ["abs:silk_touch"],
             "minecraft:geometry": "geometry.glass_stairs_north",
@@ -114,8 +110,8 @@
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
                     "minecraft:collision_box": {
-                        "origin": [ -8.0, 8.0, -8.0 ],
-                        "size": [ 16.0, 8.0, 16.0 ]
+                        "origin": [ -8.0, 6.0, -8.0 ],
+                        "size": [ 16.0, 10.0, 16.0 ]
                     },
                     "minecraft:geometry": "geometry.glass_stairs_north_down"
                 }
@@ -124,8 +120,8 @@
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
                     "minecraft:collision_box": {
-                        "origin": [ -8.0, 8.0, -8.0 ],
-                        "size": [ 16.0, 8.0, 16.0 ]
+                        "origin": [ -8.0, 6.0, -8.0 ],
+                        "size": [ 16.0, 10.0, 16.0 ]
                     },
                     "minecraft:geometry": "geometry.glass_stairs_south_down"
                 }
@@ -134,8 +130,8 @@
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
                     "minecraft:collision_box": {
-                        "origin": [ -8.0, 8.0, -8.0 ],
-                        "size": [ 16.0, 8.0, 16.0 ]
+                        "origin": [ -8.0, 6.0, -8.0 ],
+                        "size": [ 16.0, 10.0, 16.0 ]
                     },
                     "minecraft:geometry": "geometry.glass_stairs_west_down"
                 }
@@ -144,8 +140,8 @@
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
                     "minecraft:collision_box": {
-                        "origin": [ -8.0, 8.0, -8.0 ],
-                        "size": [ 16.0, 8.0, 16.0 ]
+                        "origin": [ -8.0, 6.0, -8.0 ],
+                        "size": [ 16.0, 10.0, 16.0 ]
                     },
                     "minecraft:geometry": "geometry.glass_stairs_east_down"
                 }

@@ -78,7 +78,11 @@
                 ]
             },
             "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 0.3
+                "explosion_resistance": 6
+            },
+            "minecraft:redstone_conductivity": {
+                "redstone_conductor": true,
+                "allows_wire_to_step_down": true
             },
             "minecraft:loot": "loot_tables/red_nether_brick.json"
         }

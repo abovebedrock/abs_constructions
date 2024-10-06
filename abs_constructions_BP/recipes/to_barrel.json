@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:to_barrel"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:barrel"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:barrel"
+            }
+        ],
+        "result": {
+            "item": "abs:barrel",
+            "count": 1
+        }
+    }
+}

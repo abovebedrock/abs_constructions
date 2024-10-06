@@ -70,57 +70,6 @@
         "pink_glass_slab": {
             "textures": [ "textures/blocks/glass_slab/glass_pink_slab" ]
         },
-        "glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_slab_rotated" ]
-        },
-        "white_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_white_slab_rotated" ]
-        },
-        "light_gray_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_light_gray_slab_rotated" ]
-        },
-        "gray_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_gray_slab_rotated" ]
-        },
-        "black_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_black_slab_rotated" ]
-        },
-        "brown_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_brown_slab_rotated" ]
-        },
-        "red_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_red_slab_rotated" ]
-        },
-        "orange_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_orange_slab_rotated" ]
-        },
-        "yellow_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_yellow_slab_rotated" ]
-        },
-        "lime_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_lime_slab_rotated" ]
-        },
-        "green_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_green_slab_rotated" ]
-        },
-        "cyan_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_cyan_slab_rotated" ]
-        },
-        "light_blue_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_light_blue_slab_rotated" ]
-        },
-        "blue_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_blue_slab_rotated" ]
-        },
-        "purple_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_purple_slab_rotated" ]
-        },
-        "magenta_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_magenta_slab_rotated" ]
-        },
-        "pink_glass_slab_rotated": {
-            "textures": [ "textures/blocks/glass_slab/glass_pink_slab_rotated" ]
-        },
         "glass_stairs_front": {
             "textures": [ "textures/blocks/glass_stairs/glass_stairs_front" ]
         },

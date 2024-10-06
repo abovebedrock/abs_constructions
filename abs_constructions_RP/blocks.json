@@ -164,5 +164,6 @@
     "abs:magenta_glass_stairs": {"sound": "glass"},
     "abs:pink_glass_stairs": {"sound": "glass"},
 
-    "abs:red_nether_brick": {"sound" : "nether_brick"}
+    "abs:red_nether_brick": {"sound" : "nether_brick"},
+    "abs:barrel": {"sound": "wood"}
 }

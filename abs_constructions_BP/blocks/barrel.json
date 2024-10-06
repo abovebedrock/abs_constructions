@@ -1,0 +1,145 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:barrel",
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": ["minecraft:facing_direction"]
+                }
+            },
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "barrel_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "barrel_bottom",
+                    "render_method": "opaque"
+                },
+                "side": {
+                    "texture": "barrel_side",
+                    "render_method": "opaque"
+                },
+                "*": {
+                    "texture": "barrel_side",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:geometry": "geometry.barrel_up",
+            "minecraft:map_color": "#8F7748",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.5,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 1.67
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 1.67
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 1.67
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 1.67
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 1.67
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 1.67
+                    },
+                    {
+                        "item": "minecraft:wooden_axe",
+                        "destroy_speed": 1.27
+                    },
+                    {
+                        "item": "minecraft:stone_axe",
+                        "destroy_speed": 0.63
+                    },
+                    {
+                        "item": "minecraft:iron_axe",
+                        "destroy_speed": 0.43
+                    },
+                    {
+                        "item": "minecraft:golden_axe",
+                        "destroy_speed": 0.23
+                    },
+                    {
+                        "item": "minecraft:diamond_axe",
+                        "destroy_speed": 0.33
+                    },
+                    {
+                        "item": "minecraft:netherite_axe",
+                        "destroy_speed": 0.3
+                    }
+                ]
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2.5
+            },
+            "minecraft:redstone_conductivity": {
+                "redstone_conductor": true,
+                "allows_wire_to_step_down": true
+            },
+            "minecraft:loot": "loot_tables/barrel.json"
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:facing_direction') == 'down'",
+                "components": {
+                    "minecraft:geometry": "geometry.barrel_up"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:facing_direction') == 'up'",
+                "components": {
+                    "minecraft:geometry": "geometry.barrel_down"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:facing_direction') == 'north'",
+                "components": {
+                    "minecraft:geometry": "geometry.barrel_south"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:facing_direction') == 'south'",
+                "components": {
+                    "minecraft:geometry": "geometry.barrel_north"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:facing_direction') == 'west'",
+                "components": {
+                    "minecraft:geometry": "geometry.barrel_east"
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:facing_direction') == 'east'",
+                "components": {
+                    "minecraft:geometry": "geometry.barrel_west"
+                }
+            }
+        ]
+    }
+}
