@@ -1,27 +1,29 @@
-{
+﻿{
     "format_version": "1.21.30",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "abs:back_red_nether_brick"
+            "identifier": "abs:to_charcoal_block"
         },
         "tags": [
             "crafting_table"
         ],
         "pattern": [
-            "#"
+            "###",
+            "###",
+            "###"
         ],
         "key": {
             "#": {
-                "item": "abs:red_nether_brick"
+                "item": "minecraft:charcoal"
             }
         },
         "unlock": [
             {
-                "item": "abs:red_nether_brick"
+                "item": "minecraft:charcoal"
             }
         ],
         "result": {
-            "item": "minecraft:red_nether_brick",
+            "item": "abs:charcoal_block",
             "count": 1
         }
     }

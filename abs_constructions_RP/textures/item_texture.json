@@ -1,0 +1,9 @@
+{
+    "resource_pack_name": "更多建筑方块",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "abs:hard_coke": {
+            "textures": "textures/items/hard_coke"
+        }
+    }
+}

@@ -20,7 +20,7 @@
                 "size": [ 16.0, 16.0, 16.0 ]
             },
             "minecraft:custom_components": ["abs:none_tier"],
-            "minecraft:geometry": "geometry.double",
+            "minecraft:geometry": "geometry.full_block",
             "tag:wood": {},
             "minecraft:map_color": "#700200",
             "minecraft:destructible_by_mining": {

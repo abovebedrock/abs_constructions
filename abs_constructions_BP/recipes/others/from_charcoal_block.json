@@ -1,0 +1,28 @@
+﻿{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:from_charcoal_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:charcoal_block"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:charcoal_block"
+            }
+        ],
+        "result": {
+            "item": "minecraft:charcoal",
+            "count": 9
+        }
+    }
+}

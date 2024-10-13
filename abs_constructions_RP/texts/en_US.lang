@@ -117,3 +117,5 @@ tile.abs:pink_stained_glass_stairs.name=Pink Stained Glass Stairs
 
 tile.abs:red_nether_brick.name=Another Red Nether Bricks
 tile.abs:barrel.name=Another Barrel
+tile.abs:charcoal_block.name=Charcoal Block
+item.abs:hard_coke.name=Hard Coke

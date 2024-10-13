@@ -5,7 +5,7 @@
     "num_mip_levels": 4,
     "texture_data": {
         "debug": {
-            "textures": ["textures/blocks/debug"]
+            "textures": [ "textures/blocks/debug" ]
         },
         "cut_sandstone_slab_side": {
             "textures": [ "textures/blocks/sandstone_smooth" ]
@@ -171,6 +171,9 @@
         },
         "pink_glass_stairs_side": {
             "textures": [ "textures/blocks/glass_stairs/glass_pink_stairs_side" ]
+        },
+        "charcoal_block": {
+            "textures": [ "textures/blocks/charcoal_block" ]
         }
     }
 }

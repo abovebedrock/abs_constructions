@@ -101,7 +101,9 @@
                 "redstone_conductor": true,
                 "allows_wire_to_step_down": true
             },
-            "minecraft:loot": "loot_tables/barrel.json"
+            "minecraft:light_dampening": 15,
+            "minecraft:light_emission": 0,
+            "minecraft:loot": "loot_tables/others/barrel.json"
         },
         "permutations": [
             {

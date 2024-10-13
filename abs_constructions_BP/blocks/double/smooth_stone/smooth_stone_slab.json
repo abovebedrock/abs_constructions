@@ -36,7 +36,7 @@
                 "size": [ 16.0, 16.0, 16.0 ]
             },
             "minecraft:custom_components": ["abs:wooden_tier"],
-            "minecraft:geometry": "geometry.double",
+            "minecraft:geometry": "geometry.full_block",
             "tag:stone": {},
             "minecraft:map_color": "#707070",
             "minecraft:destructible_by_mining": {

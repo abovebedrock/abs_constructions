@@ -1,0 +1,28 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:from_red_nether_brick"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "abs:red_nether_brick"
+            }
+        },
+        "unlock": [
+            {
+                "item": "abs:red_nether_brick"
+            }
+        ],
+        "result": {
+            "item": "minecraft:red_nether_brick",
+            "count": 1
+        }
+    }
+}

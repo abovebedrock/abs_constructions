@@ -1,0 +1,14 @@
+﻿{
+    "format_version": "1.21.30",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "abs:smelt_hard_coke"
+        },
+        "tags": [
+            "furnace",
+            "blast_furnace"
+        ],
+        "input": "abs:charcoal_block",
+        "output": "abs:hard_coke"
+    }
+}

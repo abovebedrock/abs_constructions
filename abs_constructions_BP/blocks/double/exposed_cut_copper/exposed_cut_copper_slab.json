@@ -20,7 +20,7 @@
                 "size": [ 16.0, 16.0, 16.0 ]
             },
             "minecraft:custom_components": ["abs:stone_tier", "abs:oxidizable"],
-            "minecraft:geometry": "geometry.double",
+            "minecraft:geometry": "geometry.full_block",
             "minecraft:map_color": "#876B62",
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 10,
