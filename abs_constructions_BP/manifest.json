@@ -6,9 +6,9 @@
     "header": {
         "name": "更多建筑方块",
         "description": "基岩之上服务器模组。提供生存友好的竖向半砖、切割玻璃和混合半砖。",
-        "min_engine_version": [ 1, 21, 30 ],
+        "min_engine_version": [ 1, 21, 42 ],
         "uuid": "3ad6fb9e-6aba-4508-b8af-1f6185767adf",
-        "version": [ 1, 2, 2 ]
+        "version": [ 1, 2, 3 ]
     },
     "modules": [
         {
@@ -27,11 +27,11 @@
     "dependencies": [
         {
             "uuid": "c900f26b-ccdd-4817-8d52-aae289ae3fc7",
-            "version": [ 1, 2, 2 ]
+            "version": [ 1, 2, 3 ]
         },
         {
             "module_name": "@minecraft/server",
-            "version": "1.15.0-beta"
+            "version": "1.16.0-beta"
         }
     ]
 }
