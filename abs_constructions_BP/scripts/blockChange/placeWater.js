@@ -1,10 +1,10 @@
 ﻿//@ts-check
-import { EquipmentSlot, GameMode, ItemStack, ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
+import { DimensionType, EquipmentSlot, GameMode, ItemStack, ItemUseOnBeforeEvent, MinecraftDimensionTypes, system, world } from "@minecraft/server";
 import { isModItem } from "../utils/namespace";
 
 /**@param {ItemUseOnBeforeEvent} data*/
 export default async function placeWater(data){
-    if(data.source.getGameMode() !== GameMode.adventure && data.itemStack.typeId === "minecraft:water_bucket" && isModItem(data.block.typeId)){
+    if(data.block.dimension.id !== MinecraftDimensionTypes.nether && data.source.getGameMode() !== GameMode.adventure && data.itemStack.typeId === "minecraft:water_bucket" && isModItem(data.block.typeId)){
         data.cancel = true;
         const
             player = data.source,
