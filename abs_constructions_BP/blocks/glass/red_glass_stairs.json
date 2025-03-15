@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.30",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "abs:red_glass_stairs",
@@ -13,7 +13,7 @@
             },
             "menu_category": {
                 "category": "construction",
-                "group": "itemGroup.name.glass"
+                "group": "minecraft:itemGroup.name.glass"
             }
         },
         "components": {
@@ -46,6 +46,12 @@
             },
             "minecraft:custom_components": ["abs:silk_touch"],
             "minecraft:geometry": "geometry.glass_stairs_north",
+            "minecraft:liquid_detection": {
+                "detection_rules": [{
+                    "can_contain_liquid": true,
+                    "stops_liquid_flowing_from_direction": ["down", "north"]
+                }]
+            },
             "minecraft:map_color": "#993333",
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 0.3,
@@ -85,49 +91,97 @@
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:vertical_half') == 'bottom'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_north"
+                    "minecraft:geometry": "geometry.glass_stairs_north",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["down", "north"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:vertical_half') == 'bottom'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_south"
+                    "minecraft:geometry": "geometry.glass_stairs_south",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["down", "south"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:vertical_half') == 'bottom'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_west"
+                    "minecraft:geometry": "geometry.glass_stairs_west",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["down", "west"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:vertical_half') == 'bottom'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_east"
+                    "minecraft:geometry": "geometry.glass_stairs_east",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["down", "east"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_north_down"
+                    "minecraft:geometry": "geometry.glass_stairs_north_down",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["up", "north"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_south_down"
+                    "minecraft:geometry": "geometry.glass_stairs_south_down",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["up", "south"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_west_down"
+                    "minecraft:geometry": "geometry.glass_stairs_west_down",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["up", "west"]
+                        }]
+                    }
                 }
             },
             {
                 "condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('minecraft:vertical_half') == 'top'",
                 "components": {
-                    "minecraft:geometry": "geometry.glass_stairs_east_down"
+                    "minecraft:geometry": "geometry.glass_stairs_east_down",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["up", "east"]
+                        }]
+                    }
                 }
             }
         ]

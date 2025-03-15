@@ -1,4 +1,3 @@
-//@ts-check
 import { world } from "@minecraft/server";
 import { getStage, hasOxidation, setStage } from "./copperUtils";
 import { decide } from "../utils/random";

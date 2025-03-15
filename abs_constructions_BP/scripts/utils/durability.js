@@ -1,5 +1,4 @@
-﻿//@ts-check
-import { EntityComponentTypes, EntityEquippableComponent, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, Player, world } from "@minecraft/server";
+﻿import { EntityComponentTypes, EquipmentSlot, GameMode, ItemComponentTypes, ItemDurabilityComponent, Player, world } from "@minecraft/server";
 import { decide } from "./random";
 
 const
@@ -32,7 +31,7 @@ export default function durability(player){
             if(item.typeId.includes("sword") || item.typeId.includes("mace") || item.typeId.includes("trident")) delta = 2;
             if(dura.damage >= dura.maxDurability - delta + 1){
                 slot?.setItem();
-                world.playSound("random.break", player.location, {
+                player.dimension.playSound("random.break", player.location, {
                     pitch: 0.9,
                     volume: 1.0
                 });

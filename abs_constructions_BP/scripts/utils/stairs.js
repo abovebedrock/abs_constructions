@@ -1,6 +1,4 @@
-﻿//@ts-check
-
-import { isModItem } from "./namespace";
+﻿import { isModItem } from "./namespace";
 
 /**判断是否为楼梯。
  * @param {string} typeId

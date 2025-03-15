@@ -1,0 +1,30 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:craft_purpur_slab_from_pillar"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:purpur_pillar"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:purpur_pillar"
+            }
+        ],
+        "result": {
+            "item": "abs:purpur_slab",
+            "count": 6
+        }
+    }
+}

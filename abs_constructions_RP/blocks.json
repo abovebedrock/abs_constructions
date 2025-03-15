@@ -10,6 +10,7 @@
     "abs:jungle_slab": {"sound": "wood"},
     "abs:mangrove_slab": {"sound": "wood"},
     "abs:cherry_slab": {"sound": "cherry_wood"},
+    "abs:pale_oak_slab": {"sound": "wood"},
     "abs:bamboo_mosaic_slab": {"sound": "bamboo_wood"},
     "abs:bamboo_slab": {"sound": "bamboo_wood"},
     "abs:crimson_slab": {"sound": "nether_wood"},
@@ -70,6 +71,7 @@
     "abs:waxed_exposed_cut_copper__waxed_exposed_cut_copper_double_slab": {"sound": "copper"},
     "abs:waxed_weathered_cut_copper__waxed_weathered_cut_copper_double_slab": {"sound": "copper"},
     "abs:waxed_oxidized_cut_copper__waxed_oxidized_cut_copper_double_slab": {"sound": "copper"},
+    "abs:resin_brick_slab": {"sound": "resin_brick"},
 
     //glass hlab
     "abs:glass_hlab": {"sound": "glass"},
@@ -165,5 +167,6 @@
     "abs:pink_glass_stairs": {"sound": "glass"},
 
     "abs:red_nether_brick": {"sound" : "nether_brick"},
-    "abs:barrel": {"sound": "wood"}
+    "abs:barrel": {"sound": "wood"},
+    "abs:leaves": {"sound": "grass"}
 }

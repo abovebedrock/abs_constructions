@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.30",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "abs:light_blue_glass__light_blue_glass_double_slab"

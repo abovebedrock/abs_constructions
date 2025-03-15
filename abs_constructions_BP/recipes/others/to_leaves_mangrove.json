@@ -1,0 +1,28 @@
+﻿{
+    "format_version": "1.21.60",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:to_leaves_mangrove"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:mangrove_leaves"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:mangrove_leaves"
+            }
+        ],
+        "result": {
+            "item": "abs:leaves",
+            "count": 1
+        }
+    }
+}

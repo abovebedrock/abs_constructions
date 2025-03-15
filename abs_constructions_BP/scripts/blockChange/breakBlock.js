@@ -1,5 +1,4 @@
-﻿//@ts-check
-import { Block, Dimension, EntityComponentTypes, EntityEquippableComponent, EntityItemComponent, EquipmentSlot, ItemStack, Player, system, world } from "@minecraft/server";
+﻿import { Block, Dimension, EntityComponentTypes, EquipmentSlot, ItemStack, Player, system, world } from "@minecraft/server";
 import durability from "../utils/durability";
 import { getHorizontalDoubleDrop, getVerticalDoubleDrop, isDoubleBlock, isVerticalDouble } from "../utils/double";
 

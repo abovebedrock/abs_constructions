@@ -1,5 +1,4 @@
-﻿//@ts-check
-import { isModItem } from "./namespace";
+﻿import { isModItem } from "./namespace";
 
 /**判断是否为组合方块，可能是水平或竖直组合！！！！！
  * @param {string} typeId
@@ -72,6 +71,7 @@ const
         "dark_oak",
         "jungle",
         "mangrove",
+        "pale_oak",
     ],
     bambooWoodSound = [
         "bamboo_mosaic",

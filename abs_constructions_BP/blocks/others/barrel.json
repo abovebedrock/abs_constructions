@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.30",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "abs:barrel",
@@ -16,19 +16,23 @@
             "minecraft:material_instances": {
                 "up": {
                     "texture": "barrel_top",
-                    "render_method": "opaque"
+                    "render_method": "opaque",
+                    "ambient_occlusion": true
                 },
                 "down": {
                     "texture": "barrel_bottom",
-                    "render_method": "opaque"
+                    "render_method": "opaque",
+                    "ambient_occlusion": true
                 },
                 "side": {
                     "texture": "barrel_side",
-                    "render_method": "opaque"
+                    "render_method": "opaque",
+                    "ambient_occlusion": true
                 },
                 "*": {
                     "texture": "barrel_side",
-                    "render_method": "opaque"
+                    "render_method": "opaque",
+                    "ambient_occlusion": true
                 }
             },
             "minecraft:selection_box": {
@@ -102,7 +106,6 @@
                 "allows_wire_to_step_down": true
             },
             "minecraft:light_dampening": 15,
-            "minecraft:light_emission": 0,
             "minecraft:loot": "loot_tables/others/barrel.json"
         },
         "permutations": [

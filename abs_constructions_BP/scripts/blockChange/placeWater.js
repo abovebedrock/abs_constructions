@@ -1,45 +1,37 @@
-﻿//@ts-check
-import { DimensionType, EquipmentSlot, GameMode, ItemStack, ItemUseOnBeforeEvent, MinecraftDimensionTypes, system, world } from "@minecraft/server";
+﻿import { EquipmentSlot, GameMode, ItemStack, ItemUseOnBeforeEvent, MinecraftDimensionTypes, system } from "@minecraft/server";
 import { isModItem } from "../utils/namespace";
+import { isHalfBlock } from "../utils/slab";
+import { isStairs } from "../utils/stairs";
 
 /**@param {ItemUseOnBeforeEvent} data*/
 export default async function placeWater(data){
-    if(data.block.dimension.id !== MinecraftDimensionTypes.nether && data.source.getGameMode() !== GameMode.adventure && data.itemStack.typeId === "minecraft:water_bucket" && isModItem(data.block.typeId)){
+    if(
+        data.source.getGameMode() !== GameMode.adventure
+     && data.itemStack.typeId === "minecraft:water_bucket"
+     && isModItem(data.block.typeId)
+     && (isHalfBlock(data.block.typeId) || isStairs(data.block.typeId))){
         data.cancel = true;
         const
-            player = data.source,
-            mode = player.getGameMode(),
-            block = data.block;
+        player = data.source,
+        mode = player.getGameMode(),
+        block = data.block;
         //只在生存模式下清空桶
         if(mode === GameMode.survival){
             const equipment = player.getComponent("minecraft:equippable");
             if(equipment) system.run(()=>equipment.getEquipmentSlot(EquipmentSlot.Mainhand).setItem(new ItemStack("minecraft:bucket", 1)));
         }
-        system.run(()=>world.playSound("bucket.empty_water", block.location));
-        const
-            direction = /**@type {import("./placeBlock").FourDirection}*/ (block.permutation.getState("minecraft:cardinal_direction")),
-            verticalHalf = /**@type {import("./placeBlock").VerticalHalf}*/ (block.permutation.getState("minecraft:vertical_half"));
-        /**@type {"0_degrees" | "90_degrees" | "180_degrees" | "270_degrees" | ""}*/
-        let rotation = "";
-        if(direction) switch(direction){
-            case "north":
-                rotation = "0_degrees";
-                break;
-            case "south":
-                rotation = "180_degrees";
-                break;
-            case "west":
-                rotation = "270_degrees";
-                break;
-            case "east":
-                rotation = "90_degrees";
-                break;
-            default:
-                console.error(`Cardinal direction get other cases: ${direction}`);
-                world.sendMessage("§e您有一条新的 bug 消息，请及时查收！");
-                break;
-        }
-        const waitForCommand = await player.runCommandAsync(`structure load ${block.typeId.replace("abs:", "")} ${block.location.x} ${block.location.y} ${block.location.z}${rotation === "" ? "" : ` ${rotation}`}`);
-        if(verticalHalf && waitForCommand.successCount > 0) block.setPermutation(block.permutation.withState("minecraft:vertical_half", verticalHalf));
+        system.run(()=>{
+            if(data.block.dimension.id === MinecraftDimensionTypes.nether){
+                data.block.dimension.playSound("random.fizz", block.location, {
+                    volume: 0.5,
+                    pitch: 2
+                });
+                data.block.dimension.spawnParticle("minecraft:water_evaporation_bucket_emitter", block.location);
+            }
+            else{
+                block.setWaterlogged(true);
+                data.block.dimension.playSound("bucket.empty_water", block.location);
+            }
+        });
     }
 }

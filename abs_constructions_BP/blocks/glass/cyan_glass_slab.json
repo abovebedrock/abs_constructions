@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.30",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "abs:cyan_glass_slab",
@@ -13,7 +13,7 @@
             
             "menu_category": {
                 "category": "construction",
-                "group": "itemGroup.name.glassPane"
+                "group": "minecraft:itemGroup.name.glassPane"
             }
         },
         "components": {
@@ -41,6 +41,12 @@
             },
             "minecraft:custom_components": ["abs:dynamic_cardinal", "abs:silk_touch"],
             "minecraft:geometry": "geometry.glass_north",
+            "minecraft:liquid_detection": {
+                "detection_rules": [{
+                    "can_contain_liquid": true,
+                    "stops_liquid_flowing_from_direction": ["north"]
+                }]
+            },
             "minecraft:map_color": "#4C7F99",
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 0.3,
@@ -88,7 +94,13 @@
                         "origin": [ -8.0, 0.0, -8.0 ],
                         "size": [ 16.0, 16.0, 8.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_north"
+                    "minecraft:geometry": "geometry.glass_north",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["north"]
+                        }]
+                    }
                 }
             },
             {
@@ -102,7 +114,13 @@
                         "origin": [ -8.0, 0.0, 0.0 ],
                         "size": [ 16.0, 16.0, 8.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_south"
+                    "minecraft:geometry": "geometry.glass_south",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["south"]
+                        }]
+                    }
                 }
             },
             {
@@ -116,7 +134,13 @@
                         "origin": [ 0.0, 0.0, -8.0 ],
                         "size": [ 8.0, 16.0, 16.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_west"
+                    "minecraft:geometry": "geometry.glass_west",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["west"]
+                        }]
+                    }
                 }
             },
             {
@@ -130,7 +154,13 @@
                         "origin": [ -8.0, 0.0, -8.0 ],
                         "size": [ 8.0, 16.0, 16.0 ]
                     },
-                    "minecraft:geometry": "geometry.glass_east"
+                    "minecraft:geometry": "geometry.glass_east",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["east"]
+                        }]
+                    }
                 }
             }
         ]

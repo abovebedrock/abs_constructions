@@ -1,5 +1,4 @@
-//@ts-check
-import { BlockPermutation, EntityComponentTypes, EntityEquippableComponent, EquipmentSlot, ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
+import { BlockPermutation, EntityComponentTypes, EquipmentSlot, ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
 import { isInCopperCategory, isWaxed } from "./copperUtils";
 import { isModItem } from "../utils/namespace";
 
@@ -18,7 +17,7 @@ export default function waxOn(data){
             hand = data.source.getComponent(EntityComponentTypes.Equippable).getEquipmentSlot(EquipmentSlot.Mainhand),
             newPermutation = BlockPermutation.resolve(id.replace("abs:", "abs:waxed_").replace("__", "__waxed_"), data.block.permutation.getAllStates());
         data.block.setPermutation(newPermutation);
-        world.playSound("copper.wax.on", center);
+        data.block.dimension.playSound("copper.wax.on", center);
         data.block.dimension.spawnParticle("abs:wax_on", center);
         if(data.itemStack.amount > 1){
             const newItem = data.itemStack.clone();

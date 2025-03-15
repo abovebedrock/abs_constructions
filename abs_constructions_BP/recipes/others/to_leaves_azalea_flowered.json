@@ -1,0 +1,28 @@
+﻿{
+    "format_version": "1.21.60",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "abs:to_leaves_azalea_flowered"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:azalea_leaves_flowered"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:azalea_leaves_flowered"
+            }
+        ],
+        "result": {
+            "item": "abs:leaves",
+            "count": 1
+        }
+    }
+}

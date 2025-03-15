@@ -1,5 +1,4 @@
-﻿//@ts-check
-import { Block, BlockPermutation } from "@minecraft/server";
+﻿import { Block, BlockPermutation } from "@minecraft/server";
 import { getNamespace } from "../utils/namespace";
 
 //#region 氧化阶段CRUD
@@ -73,6 +72,18 @@ function getCopperType(typeId){
  */
 export function canDeoxidize(typeId){
     return isInCopperCategory(typeId) && !isWaxed(typeId) && getStage(typeId) !== 0;
+}
+
+/**试图给目标铜质方块去除一级氧化状态。如果目标为未氧化，则忽略。
+ * @param {Block} block 目标铜质方块。
+ * @returns {boolean} 是否成功去除了锈蚀。
+*/
+export function deoxidize(block){
+    if(getStage(block.typeId) > 0){
+        setStage(block, /**@type {import("./copperUtils").stageNumber}*/ (getStage(block.typeId) - 1));
+        return true;
+    }
+    else return false;
 }
 
 /**判断方块是否参与**氧化**机制，特别排除彻底氧化变种。

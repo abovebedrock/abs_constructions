@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.30",
+    "format_version": "1.21.60",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "abs:craft_purpur_slab"
@@ -14,12 +14,14 @@
         ],
         "key": {
             "#": {
-                "item": "minecraft:purpur_block"
+                "item": "minecraft:purpur_block",
+                "data": 0
             }
         },
         "unlock": [
             {
-                "item": "minecraft:purpur_block"
+                "item": "minecraft:purpur_block",
+                "data": 0
             }
         ],
         "result": {

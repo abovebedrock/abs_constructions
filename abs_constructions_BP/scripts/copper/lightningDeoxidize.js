@@ -1,12 +1,12 @@
-﻿//@ts-check
-import { EntitySpawnAfterEvent, Entity, Block } from "@minecraft/server";
-import { setStage, hasOxidation, getStage } from "./copperUtils";
+﻿import { EntitySpawnAfterEvent, Entity, Block, MolangVariableMap } from "@minecraft/server";
+import { setStage, hasOxidation, getStage, deoxidize } from "./copperUtils";
 import { randomInt } from "../utils/random";
 import { isModItem } from "../utils/namespace";
 
 /**@param {EntitySpawnAfterEvent} data*/
 export default function lightningDeoxidize(data){
-    const bolt = data.entity;
+    const bolt = data.entity, molang = new MolangVariableMap();
+    molang.setVector3("variable.direction", {x: 0, y: 0.1, z: 0});
     if(bolt.typeId === "minecraft:lightning_bolt"){
         const info = deoxidationInfo(bolt);
         if(info.meetsCondition){
@@ -25,7 +25,14 @@ export default function lightningDeoxidize(data){
                         if(newBlock === null) continue;
                         else{
                             currentBlock = newBlock;
-                            if(isFromMod || (!isFromMod && isModItem(currentBlock.typeId))) deoxidize(currentBlock);
+                            if(isFromMod || (!isFromMod && isModItem(currentBlock.typeId))){
+                                deoxidize(currentBlock);
+                                data.entity.dimension.spawnParticle("minecraft:electric_spark_particle", {
+                                    x: currentBlock.location.x + Math.random(),
+                                    y:currentBlock.location.y + 1.05,
+                                    z: currentBlock.location.z + Math.random()
+                                }, molang);
+                            }
                         }
                     }
                 }
@@ -51,18 +58,6 @@ function findNextLocation(block){
     return null;
 }
 
-/**试图给目标铜质方块去除一级氧化状态。如果目标为未氧化，则忽略。
- * @param {Block} block 目标铜质方块。
- * @returns {boolean} 是否成功去除了锈蚀。
-*/
-function deoxidize(block){
-    if(getStage(block.typeId) > 0){
-        setStage(block, /**@type {import("./copperUtils").stageNumber}*/ (getStage(block.typeId) - 1));
-        return true;
-    }
-    else return false;
-}
-
 /**判断坐标是否触发除锈条件，触发何种条件，并返回除锈起始点坐标。
  * @param {Entity} entity 闪电。
  * @typedef {{
@@ -71,8 +66,8 @@ function deoxidize(block){
  *     meetsCondition :true;
  *     block :Block;
  *     type :"vanilla" | "vanilla_within" | "vanilla_rod" | "mod" | "mod_within" | "mod_rod";
- * }} deoxidationInfo
- * @returns {deoxidationInfo}
+ * }} DeoxidationInfo
+ * @returns {DeoxidationInfo}
  */
 function deoxidationInfo(entity){
     const
@@ -83,7 +78,7 @@ function deoxidationInfo(entity){
             z: Math.floor(entity.location.z)
         },
         block = entity.dimension.getBlock(location);
-        /**@type {deoxidationInfo}*/
+        /**@type {DeoxidationInfo}*/
         let result = {meetsCondition: false};
     if(block){
         //先检查是否击中避雷针。

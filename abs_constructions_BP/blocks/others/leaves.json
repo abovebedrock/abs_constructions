@@ -1,0 +1,107 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:leaves",
+            "menu_category": {
+                "category": "nature"
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "azalea_leaves",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:custom_components": ["abs:none_tier"],
+            "minecraft:geometry": "geometry.full_block",
+            "minecraft:liquid_detection": {
+                "detection_rules": [{
+                    "can_contain_liquid": true,
+                    "stops_liquid_flowing_from_direction": ["down", "east", "north", "south", "up", "west"]
+                }]
+            },
+            "minecraft:map_color": "#007C00",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.2,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:wooden_hoe",
+                        "destroy_speed": 0.1
+                    },
+                    {
+                        "item": "minecraft:stone_hoe",
+                        "destroy_speed": 0.07
+                    },
+                    {
+                        "item": "minecraft:iron_hoe",
+                        "destroy_speed": 0.03
+                    },
+                    {
+                        "item": "minecraft:golden_hoe",
+                        "destroy_speed": 0.03
+                    },
+                    {
+                        "item": "minecraft:diamond_hoe",
+                        "destroy_speed": 0.03
+                    },
+                    {
+                        "item": "minecraft:netherite_hoe",
+                        "destroy_speed": 0.03
+                    },
+                    {
+                        "item": "minecraft:shears",
+                        "destroy_speed": 0.03
+                    }
+                ]
+            },
+            "minecraft:flammable": {
+                "catch_chance_modifier": 30,
+                "destroy_chance_modifier": 60
+            },
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": false,
+                "redstone_conductor": false
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 0.2
+            },
+            "minecraft:light_dampening": 1,
+            "minecraft:light_emission": 0,
+            "minecraft:loot": "loot_tables/others/leaves.json"
+        }
+    }
+}

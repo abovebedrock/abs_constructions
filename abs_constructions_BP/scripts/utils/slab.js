@@ -1,5 +1,4 @@
-﻿//@ts-check
-import { isDoubleBlock } from "./double";
+﻿import { isDoubleBlock } from "./double";
 import { isModItem } from "./namespace";
 
 /**本来只需要`!isDoubleBlock`的，奈何有《另一种红色下界砖块》:)

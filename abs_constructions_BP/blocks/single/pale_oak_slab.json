@@ -1,0 +1,189 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:pale_oak_slab",
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ]
+                }
+            },
+            "menu_category": {
+                "category": "construction",
+                "group": "minecraft:itemGroup.name.slab"
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "pale_oak_planks",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 8.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 8.0 ]
+            },
+            "minecraft:custom_components": ["abs:dynamic_cardinal", "abs:none_tier"],
+            "minecraft:geometry": "geometry.north",
+            "minecraft:liquid_detection": {
+                "detection_rules": [{
+                    "can_contain_liquid": true,
+                    "stops_liquid_flowing_from_direction": ["north"]
+                }]
+            },
+            "tag:wood": {},
+            "minecraft:map_color": "#FFFCF5",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 1.33
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 1.33
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 1.33
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 1.33
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 1.33
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 1.33
+                    },
+                    {
+                        "item": "minecraft:wooden_axe",
+                        "destroy_speed": 1
+                    },
+                    {
+                        "item": "minecraft:stone_axe",
+                        "destroy_speed": 0.5
+                    },
+                    {
+                        "item": "minecraft:iron_axe",
+                        "destroy_speed": 0.33
+                    },
+                    {
+                        "item": "minecraft:golden_axe",
+                        "destroy_speed": 0.17
+                    },
+                    {
+                        "item": "minecraft:diamond_axe",
+                        "destroy_speed": 0.27
+                    },
+                    {
+                        "item": "minecraft:netherite_axe",
+                        "destroy_speed": 0.23
+                    }
+                ]
+            },
+            "minecraft:flammable": {
+                "catch_chance_modifier": 5,
+                "destroy_chance_modifier": 20
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3.0
+            },
+            "minecraft:light_dampening": 1,
+            "minecraft:loot": "loot_tables/single/pale_oak_slab.json"
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [ -8.0, 0.0, -8.0 ],
+                        "size": [ 16.0, 16.0, 8.0 ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 0.0, -8.0 ],
+                        "size": [ 16.0, 16.0, 8.0 ]
+                    },
+                    "minecraft:geometry": "geometry.north",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["north"]
+                        }]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [ -8.0, 0.0, 0.0 ],
+                        "size": [ 16.0, 16.0, 8.0 ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 0.0, 0.0 ],
+                        "size": [ 16.0, 16.0, 8.0 ]
+                    },
+                    "minecraft:geometry": "geometry.south",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["south"]
+                        }]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [ 0.0, 0.0, -8.0 ],
+                        "size": [ 8.0, 16.0, 16.0 ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [ 0.0, 0.0, -8.0 ],
+                        "size": [ 8.0, 16.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.west",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["west"]
+                        }]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:selection_box": {
+                        "origin": [ -8.0, 0.0, -8.0 ],
+                        "size": [ 8.0, 16.0, 16.0 ]
+                    },
+                    "minecraft:collision_box": {
+                        "origin": [ -8.0, 0.0, -8.0 ],
+                        "size": [ 8.0, 16.0, 16.0 ]
+                    },
+                    "minecraft:geometry": "geometry.east",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["east"]
+                        }]
+                    }
+                }
+            }
+        ]
+    }
+}

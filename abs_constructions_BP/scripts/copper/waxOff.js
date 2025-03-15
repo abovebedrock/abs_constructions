@@ -1,5 +1,4 @@
-﻿//@ts-check
-import { BlockPermutation, ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
+﻿import { BlockPermutation, ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
 import { isInCopperCategory, isWaxed } from "./copperUtils";
 import { isModItem } from "../utils/namespace";
 import durability from "../utils/durability";
@@ -28,7 +27,7 @@ export default function waxOff(data){
             };
         data.block.setPermutation(newPermutation);
         durability(data.source);
-        world.playSound("copper.wax.off", center);
+        data.block.dimension.playSound("copper.wax.off", center);
         data.block.dimension.spawnParticle("abs:wax_off", center);
     });
 }

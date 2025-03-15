@@ -1,0 +1,13 @@
+﻿{
+    "format_version": "1.21.60",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "abs:smelt_leaves"
+        },
+        "tags": [
+            "furnace"
+        ],
+        "input": "abs:leaves",
+        "output": "minecraft:leaf_litter"
+    }
+}

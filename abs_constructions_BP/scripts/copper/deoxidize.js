@@ -1,12 +1,11 @@
-﻿//@ts-check
-import { ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
-import { canDeoxidize, getStage, setStage } from "./copperUtils";
+﻿import { ItemUseOnBeforeEvent, system, world } from "@minecraft/server";
+import { canDeoxidize, deoxidize, getStage, setStage } from "./copperUtils";
 import { isModItem } from "../utils/namespace";
 import durability from "../utils/durability";
 import { randomInt } from "../utils/random";
 
 /**@param {ItemUseOnBeforeEvent} data*/
-export default function deoxidize(data){
+export default function deoxidizeCB(data){
     const id = data.block.typeId;
     if(
         data.itemStack && isModItem(id) && canDeoxidize(id)
@@ -19,7 +18,7 @@ export default function deoxidize(data){
          || data.itemStack.typeId === "minecraft:netherite_axe"
         )
     ) system.run(()=>{
-        setStage(data.block, /**@type {import("./copperUtils").stageNumber}*/ (getStage(data.block.typeId) - 1));
+        deoxidize(data.block);
         durability(data.source);
         /**@type {import("@minecraft/server").Vector3}*/
         const center = {
@@ -27,7 +26,7 @@ export default function deoxidize(data){
             y: data.block.location.y + 0.5,
             z: data.block.location.z + 0.5
         };
-        world.playSound("scrape", center, {
+        data.block.dimension.playSound("scrape", center, {
             volume: 1.0,
             pitch: randomInt(8, 12) / 10
         });

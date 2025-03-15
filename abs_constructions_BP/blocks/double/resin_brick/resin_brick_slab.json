@@ -1,0 +1,86 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "abs:resin_brick__resin_brick_double_slab"
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "resin_bricks",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:selection_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:collision_box": {
+                "origin": [ -8.0, 0.0, -8.0 ],
+                "size": [ 16.0, 16.0, 16.0 ]
+            },
+            "minecraft:custom_components": ["abs:wooden_tier"],
+            "minecraft:geometry": "geometry.full_block",
+            "tag:stone": {},
+            "minecraft:map_color": "#9F5224",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 5,
+                "item_specific_speeds": [
+                    {
+                        "item": "minecraft:wooden_sword",
+                        "destroy_speed": 3.33
+                    },
+                    {
+                        "item": "minecraft:stone_sword",
+                        "destroy_speed": 3.33
+                    },
+                    {
+                        "item": "minecraft:iron_sword",
+                        "destroy_speed": 3.33
+                    },
+                    {
+                        "item": "minecraft:golden_sword",
+                        "destroy_speed": 3.33
+                    },
+                    {
+                        "item": "minecraft:diamond_sword",
+                        "destroy_speed": 3.33
+                    },
+                    {
+                        "item": "minecraft:netherite_sword",
+                        "destroy_speed": 3.33
+                    },
+                    {
+                        "item": "minecraft:wooden_pickaxe",
+                        "destroy_speed": 0.77
+                    },
+                    {
+                        "item": "minecraft:stone_pickaxe",
+                        "destroy_speed": 0.4
+                    },
+                    {
+                        "item": "minecraft:iron_pickaxe",
+                        "destroy_speed": 0.27
+                    },
+                    {
+                        "item": "minecraft:golden_pickaxe",
+                        "destroy_speed": 0.13
+                    },
+                    {
+                        "item": "minecraft:diamond_pickaxe",
+                        "destroy_speed": 0.2
+                    },
+                    {
+                        "item": "minecraft:netherite_pickaxe",
+                        "destroy_speed": 0.17
+                    }
+                ]
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6.0
+            },
+            "minecraft:light_dampening": 1,
+            "minecraft:loot": "loot_tables/double/resin_brick/resin_brick_slab.json"
+        }
+    }
+}

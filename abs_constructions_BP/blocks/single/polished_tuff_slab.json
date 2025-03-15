@@ -1,5 +1,5 @@
 {
-    "format_version": "1.21.30",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "abs:polished_tuff_slab",
@@ -12,7 +12,7 @@
             },
             "menu_category": {
                 "category": "construction",
-                "group": "itemGroup.name.slab"
+                "group": "minecraft:itemGroup.name.slab"
             }
         },
         "components": {
@@ -32,6 +32,12 @@
             },
             "minecraft:custom_components": ["abs:dynamic_cardinal", "abs:wooden_tier"],
             "minecraft:geometry": "geometry.north",
+            "minecraft:liquid_detection": {
+                "detection_rules": [{
+                    "can_contain_liquid": true,
+                    "stops_liquid_flowing_from_direction": ["north"]
+                }]
+            },
             "tag:stone": {},
             "minecraft:map_color": "#392923",
             "minecraft:destructible_by_mining": {
@@ -105,7 +111,13 @@
                         "origin": [ -8.0, 0.0, -8.0 ],
                         "size": [ 16.0, 16.0, 8.0 ]
                     },
-                    "minecraft:geometry": "geometry.north"
+                    "minecraft:geometry": "geometry.north",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["north"]
+                        }]
+                    }
                 }
             },
             {
@@ -119,7 +131,13 @@
                         "origin": [ -8.0, 0.0, 0.0 ],
                         "size": [ 16.0, 16.0, 8.0 ]
                     },
-                    "minecraft:geometry": "geometry.south"
+                    "minecraft:geometry": "geometry.south",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["south"]
+                        }]
+                    }
                 }
             },
             {
@@ -133,7 +151,13 @@
                         "origin": [ 0.0, 0.0, -8.0 ],
                         "size": [ 8.0, 16.0, 16.0 ]
                     },
-                    "minecraft:geometry": "geometry.west"
+                    "minecraft:geometry": "geometry.west",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["west"]
+                        }]
+                    }
                 }
             },
             {
@@ -147,7 +171,13 @@
                         "origin": [ -8.0, 0.0, -8.0 ],
                         "size": [ 8.0, 16.0, 16.0 ]
                     },
-                    "minecraft:geometry": "geometry.east"
+                    "minecraft:geometry": "geometry.east",
+                    "minecraft:liquid_detection": {
+                        "detection_rules": [{
+                            "can_contain_liquid": true,
+                            "stops_liquid_flowing_from_direction": ["east"]
+                        }]
+                    }
                 }
             }
         ]
